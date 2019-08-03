@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Function_r</title>
+</head>
+<body>
+	<script>
+        function padString (string, number, symbol, isRight) {
+            var StrLength = string.length;
+            var result = number - StrLength;
+            if (StrLength >= number) {
+                return string;
+            } else {
+                if(isRight) {
+                    return padString(string, number - 1, symbol, isRight) + symbol;
+                } else {
+                  return symbol + padString(string, number - 1, symbol, isRight);  
+                }
+            }   
+        }
+	</script>
+</body>
+</html>
+
