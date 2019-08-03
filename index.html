@@ -7,9 +7,7 @@
 <body>
 	<script>
         function padString (string, number, symbol, isRight) {
-            var StrLength = string.length;
-            var result = number - StrLength;
-            if (StrLength >= number) {
+            if (string.length >= number) {
                 return string;
             } else {
                 if(isRight) {
